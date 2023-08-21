@@ -1,5 +1,9 @@
+!react-project/
 react-project/*
-!react-proejct/src
+
+!react-project/public
+!react-project/src
+
 # Logs
 logs
 *.log
