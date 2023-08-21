@@ -1,8 +1,10 @@
 !react-project/
 react-project/*
 
+
 !react-project/public
 !react-project/src
+!react-project/package.json
 
 # Logs
 logs
