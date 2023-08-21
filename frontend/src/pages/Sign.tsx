@@ -1,7 +1,6 @@
 export function SignIn() {
   return (
     <div className="signIn">
-      asd
       <button>asd</button>
     </div>
   );
@@ -9,8 +8,7 @@ export function SignIn() {
 export function SignUp() {
   return (
     <div className="signUp">
-      qwe
-      <button>asd</button>
+      <button>qwe</button>
     </div>
   );
 }
