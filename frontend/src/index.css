@@ -1,31 +1,36 @@
 body {
   margin: 0;
-  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: var(--base-dark);
+  color: #fff;
 }
-
+#root {
+  overflow: hidden;
+}
+.scroll {
+  overflow-y: scroll !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 .container {
   margin: 0 auto;
+  width: 58vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
-@media (min-width: 576px) {
+@media (max-aspect-ratio: 29 / 50) {
   .container {
-    max-width: 540px;
+    width: 100%;
   }
 }
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
+.main {
+  height: 100%;
 }
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
 :root {
   --base-dark: #343a40;
 }
