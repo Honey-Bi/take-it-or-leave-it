@@ -11,10 +11,10 @@ const db = mysql.createPool({
   database: "test",
 });
 
-app.use(express.static(path.join(__dirname, "react-project/build")));
+app.use(express.static(path.join(__dirname, "frontend/build")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/react-project/build/index.html"));
+  res.sendFile(path.join(__dirname, "/frontend/build/"));
   //   const sqlQuery = "INSERT INTO requested (rowno) VALUES (2)";
   //   db.query(sqlQuery, (err, result) => {
   //     console.log(err);
