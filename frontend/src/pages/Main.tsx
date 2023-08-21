@@ -1,10 +1,15 @@
-import { useNavigate } from "react-router-dom";
+import style from "./css/main.module.css";
 
 export default function Main() {
-  const navigate = useNavigate();
   return (
-    <div className="">
-      <button onClick={(e) => navigate("/sign")}>Login</button>
+    <div className={style.content}>
+      <div className={style.stats}>a</div>
+      <div className={style.dialog}>a</div>
+      <div className={style.deck}></div>
+      <div className={style.name}>
+        test
+        {false ? <span className={style.subname}></span> : ""}
+      </div>
     </div>
   );
 }
