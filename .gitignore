@@ -1,5 +1,5 @@
-react-project
-
+react-project/*
+!react-proejct/src
 # Logs
 logs
 *.log
