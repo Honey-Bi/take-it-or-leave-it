@@ -1,6 +1,7 @@
+/build
+
 !react-project/
 react-project/*
-
 
 !react-project/public
 !react-project/src
