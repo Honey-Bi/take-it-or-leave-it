@@ -1,14 +1,19 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+
+import Header from "components/Header";
 import Main from "pages/Main";
-import One from "pages/One";
+import { SignIn, SignUp } from "pages/Sign";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/One" element={<One />} />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/sign_in" element={<SignIn />} />
+        <Route path="/sign_up" element={<SignUp />} />
+      </Routes>
+    </>
   );
 }
 
