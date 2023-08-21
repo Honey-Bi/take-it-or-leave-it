@@ -4,8 +4,7 @@ export default function Main() {
   const navigate = useNavigate();
   return (
     <div className="">
-      Hello World!
-      <button onClick={(e) => navigate("/one")}>move!</button>
+      <button onClick={(e) => navigate("/sign")}>Login</button>
     </div>
   );
 }
