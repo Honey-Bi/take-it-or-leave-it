@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    // "module": "",
+    "module": "commonjs",
     "rootDir": ".",
     "outDir": "build",
     "strict": true,
@@ -11,3 +11,4 @@
   },
   "include": ["./index.ts"]
 }
+
