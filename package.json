@@ -5,14 +5,13 @@
   "dependencies": {
     "express": "^4.18.2",
     "mysql": "^2.18.1",
-    "nodemon": "^3.0.1",
     "package": "^1.0.1",
     "ts-node": "^10.9.1"
   },
   "scripts": {
     "build": "npx tsc",
     "start": "node ./build/index.js",
-    "dev": "nodemon index.ts"
+    "dev": "node --watch --require ts-node/register index.ts"
   },
   "devDependencies": {
     "@types/mysql": "^2.15.21",
@@ -25,5 +24,8 @@
     "postcss@>=8 <9": "^8.5.29",
     "minimatch@>=3 <4": "^3.1.5",
     "proxy-addr": "^2.0.8"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
   }
 }
