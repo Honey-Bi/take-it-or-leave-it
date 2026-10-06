@@ -19,5 +19,11 @@
     "@types/express": "^4.17.17",
     "@types/node": "^20.5.1",
     "typescript": "^5.1.6"
+  },
+  "overrides": {
+    "qs": "^6.16.0",
+    "postcss@>=8 <9": "^8.5.29",
+    "minimatch@>=3 <4": "^3.1.5",
+    "proxy-addr": "^2.0.8"
   }
 }
